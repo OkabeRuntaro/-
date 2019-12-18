@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+<!-- 配置service <bean> 配置需要创建的对象
+            id ：用于之后从spring容器获得实例时使用的
+            class ：需要创建实例的全限定类名
+    -->
+    <!-- scope:可以声明单例和多例模式 -->
+    <!-- ioc控制反转
+    Dept dept = new Dept();
+     -->
+ <bean id="dept" class="com.woniu.Bean.Dept" scope="prototype"></bean>
+</beans>

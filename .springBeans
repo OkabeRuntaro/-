@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.9.9.201906180643-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/main/java/com/woniu/Bean/application.xml</config>
+		<config>src/main/java/com/woniu/Dome2/app.xml</config>
+		<config>src/main/java/com/woniu/Dome6/applicationContext.xml</config>
+		<config>src/main/java/com/woniu/Dome7/applicationContext.xml</config>
+		<config>src/main/java/com/woniu/Dome8/ApplicationContext.xml</config>
+		<config>src/main/resources/applicationContext.xml</config>
+	</configs>
+	<autoconfigs>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>

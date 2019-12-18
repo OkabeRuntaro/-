@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+<!-- 实例化的三种方式 -->
+<!-- 1.通过构造器产生 -->
+<bean id="d1" class="com.woniu.Dome2.Attrbute">
+	<!-- 构造器注入 -->
+	<!-- name可以替换为index用下标注入 -->
+	<!--  <constructor-arg name="attrbuteid" value="nihao"></constructor-arg>  -->
+	<!-- set注入 -->
+	<!-- <property name="Attrbuteid" value="1"></property> -->
+	<!-- 集合注入 -->
+	
+</bean>
+<!-- 通过静态工厂产生 -->
+<bean id="d2" class="com.woniu.Dome2.DeptFactory" factory-method="getDept"></bean>
+<!-- 通过 -->
+<bean id="d3" ></bean>
+</beans>

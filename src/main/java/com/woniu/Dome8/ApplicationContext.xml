@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
+<bean class="com.woniu.Dome8.DeptServiceImpl" id ="deptServiceImpl"></bean>
+<bean class="com.woniu.Dome8.MyAOP" id="aop"></bean>
+
+
+<!-- 配置AOP -->
+<aop:config>
+	<aop:aspect ref="aop">
+		<aop:pointcut id="pointCut" expression="execution(* com.woniu.Dome8..*.*(..))"/>
+		<aop:before pointcut-ref="pointCut" method="before"/>
+		<aop:after-returning pointcut-ref="pointCut" method="afterReturning"/>
+		<aop:after-throwing pointcut-ref="pointCut" method="afterThrowing"/>
+		<aop:around pointcut-ref="pointCut" method="around"/>
+		<aop:after pointcut-ref="pointCut" method="after"/>
+	</aop:aspect>
+</aop:config>
+</beans>
